@@ -1,51 +1,52 @@
-<!DOCTYPE html>
+KIDOCTYPE html>
 
-chtal
+(htal)
 
-<body>
+body
 
-    <h2>JavaScript Class Static Methods</h2>
+<h2>JavaScript Class Inheritance</h2>
 
-    <p>A static method is created with the "static" keyword, and you can only call the method on the class itself.</p>
+<p>use the "extends" keyword to inherit all methods from another class.</p>
 
-    <p id="hello"></p>
+<p>Use the "super method to call the parent's constructor function.</p>
 
-    <p id="hi"></p>
+<p id="details"></p>
 
-    <p id="welcome"></p>
+<script>
 
-    <script>
+    class Car {
 
-        class Student (
+        constructor(brand){
 
-            constructor(name)(
+            this.carname=brand;
+        }
 
-                this.studentname name;
+    present(){
 
-static halle() { 
+return 'I have a '+this.carname;
+    }
+}
 
-            return "Helloli
+    class Model extends Car{
 
-static welcome(x)
+        constructor(brand, nod){
 
-            return "Welcome" x.studentname;
+            super(brand);
 
-            M()(
+        this.model= mod;
+        }
+        show(){
 
-                Rymana new Student("Carol");
+return this.present() + ', it is a'+ this.model;
+        }
+    }
 
-            return "Hi this.studentname;
+LetmyCar= new Model("Ford", "Mustang");
 
-            
-            document.getElementById("hello").innerHTML Student.helle();
+    document.getElementById("details").innerHTML =myCar.show();
 
-            
+</script>
 
-            document.getElementById("hi").innerHTML myname.hi();
-
-        
-
-    </script>
 
 </body>
 
